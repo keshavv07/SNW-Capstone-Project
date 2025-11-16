@@ -330,8 +330,6 @@ a.btn:hover {
 .ready {
     height: 280px;
     background-color: #800000;
-    position: relative;
-    top: 72px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -349,7 +347,11 @@ a.btn:hover {
     font-size: 20px;
     margin-bottom: 32px;
 }
+.readyorder{
+    position: relative;
+    top: 72px;
 
+}
 .ready button {
     background-color: green;
     padding: 10px 32px;
@@ -368,15 +370,16 @@ a.btn:hover {
 
 
 .footer-container {
-    position: relative;
-    top: 72px;
-    height: 290px;
+
+    height: 160px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding-top: 44px;
 }
 .foot {
+        position: relative;
+    top: 72px;
     display: flex;
     flex-direction: column;
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -384,10 +387,32 @@ a.btn:hover {
 .footer-column {
     width: 355px;
 }
+.footer-column p {
+    font-size: 14px;
+    color: gray;
+    margin-top: 10px;
+}
 li {
     list-style-type: none;
+    font-size: 14px;
+    color: gray;
+    line-height: 1;
+    margin-top: 10px;
+    
 }
 li a {
     text-decoration: none;
+    color: grey;
+}
 
+.footer-bottom p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+    border-top: 0.01px solid gray;
+    padding-top: 30px;
+}
+.footer-bottom {
+    width: 1400px;
+    margin: 0 auto;
 }
