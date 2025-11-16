@@ -12,7 +12,7 @@
     align-items: center;
     position: fixed;
     z-index: 99;
-
+    box-shadow: 0 5px 15px #80808084;
 }
 
 .items ul {
