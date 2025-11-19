@@ -61,25 +61,34 @@
     color: #800000;
     border-bottom: 2px solid #800000;
 }
-
 .hero {
-    background-image: url(images/hero-food.jpg);
-    background-position: center;
-    background-size: cover;
-    padding-top: 72px;
-    width: 100vw;
+    position: relative;
+    width: 100%;
+    min-height: 85vh;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
+    padding: 40px 0;
     color: white;
-    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Symbol, "Noto Color Emoji";
+
 }
 
 .back {
-    background-color: black;
+    background-image: url(images/hero-food.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    margin-top: 72px;
+}
+
+.blk {
+    width: 100%;
+    height: 100%;
     opacity: 0.5;
-    height: 75vh;
-    width: 100vw;
+    background-color: #000000;
 
 }
 
@@ -87,6 +96,7 @@
     padding-left: 25px;
     position: absolute;
     width: 42vw;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Symbol, "Noto Color Emoji";
 }
 
 .hero-buttons a {
@@ -142,7 +152,8 @@ a.btn:hover {
     color: #000000;
     font-weight: 600;
 }
-.svgs{
+
+.svgs {
     height: 55px;
     width: 55px;
     border-radius: 50%;
@@ -151,6 +162,7 @@ a.btn:hover {
     align-items: center;
     background-color: rgb(219, 19, 19);
 }
+
 .diff-card img {
     height: 44px;
     position: relative;
@@ -350,6 +362,7 @@ a.btn:hover {
     font-size: 20px;
     margin-bottom: 32px;
 }
+
 .ready button {
     background-color: #00802d;
     padding: 10px 32px;
@@ -374,27 +387,32 @@ a.btn:hover {
     flex-wrap: wrap;
     padding-top: 44px;
 }
+
 .foot {
     flex-direction: column;
     display: flex;
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
 .footer-column {
     width: 355px;
 }
+
 .footer-column p {
     font-size: 14px;
     color: gray;
     margin-top: 10px;
 }
+
 .foot li {
     list-style-type: none;
     font-size: 14px;
     color: gray;
     line-height: 1;
     margin-top: 10px;
-    
+
 }
+
 .foot li a {
     text-decoration: none;
     color: grey;
@@ -407,7 +425,111 @@ a.btn:hover {
     border-top: 0.01px solid gray;
     padding-top: 30px;
 }
+
 .footer-bottom {
-    width: 1400px;
+    width: 100%;
     margin: 0 auto;
+}
+
+
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .dishes {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1111px) {
+    .items ul {
+        gap: 12px;
+        padding: 10px 0;
+    }
+
+    .hero {
+        height: auto;
+    }
+
+    .hero-content {
+        width: 100%;
+        position: relative;
+        padding: 30px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+    }
+
+    .diff-main {
+        flex-direction: column;
+        height: auto;
+        gap: 25px;
+        padding: 40px 0;
+    }
+
+    .dishes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured {
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 30px;
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .footer-container li,h3,h4,p{
+        text-align: center;
+    }
+
+    .footer-bottom {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .btncolor,
+    .btn {
+        text-align: center;
+        width: 100%;
+    }
+
+    .dish-card {
+        width: 90%;
+    }
+
+    .ready h2 {
+        font-size: 32px;
+    }
+
+    .ready p {
+        font-size: 16px;
+    }
+
+    .ready button {
+        font-size: 16px;
+        width: 80%;
+    }
 }
