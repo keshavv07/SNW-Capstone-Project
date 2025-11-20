@@ -115,7 +115,6 @@
 
 .values {
     text-align: center;
-    /* padding: 80px 0px; */
 }
 
 .values-header h2 {
@@ -146,9 +145,11 @@
     gap: 2rem;
     flex-wrap: wrap;
 }
+
 img {
     height: 30px;
 }
+
 .value-card {
     width: 240px;
     background: white;
@@ -196,7 +197,6 @@ img {
     align-items: center;
     gap: 8rem;
     flex-wrap: wrap;
-    /* background: linear-gradient(to bottom, #995a5a21, #b58a8a1b); */
     background-color: #5d00000b;
 
 
@@ -220,30 +220,34 @@ img {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    /* padding-top: 44px; */
 }
+
 .foot {
     padding-top: 45px;
     display: flex;
     flex-direction: column;
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
 .footer-column {
     width: 355px;
 }
+
 .footer-column p {
     font-size: 14px;
     color: gray;
     margin-top: 10px;
 }
+
 li {
     list-style-type: none;
     font-size: 14px;
     color: gray;
     line-height: 1;
     margin-top: 10px;
-    
+
 }
+
 li a {
     text-decoration: none;
     color: grey;
@@ -256,7 +260,49 @@ li a {
     border-top: 0.01px solid gray;
     padding-top: 30px;
 }
+
 .footer-bottom {
     width: 1400px;
     margin: 0 auto;
+}
+
+
+@media (max-width: 992px) {
+    .about-header h1 {
+        font-size: 36px;
+    }
+
+    .about-content {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    .stats {
+        gap: 4rem;
+        padding: 40px 0;
+        height: auto;
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 360px) {
+
+    .items ul {
+        gap: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 30px;
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .footer-container li,h3,h4,p{
+        text-align: center;
+    }
+
+    .footer-bottom {
+        width: 100%;
+    }
 }
