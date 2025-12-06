@@ -24,3 +24,7 @@ for (let i = 0; i < changeBgColor.length; i++) {
         changeBgColor[i].style.transform = 'translateY(0)';
     })
 }
+
+document.getElementById("btn").addEventListener("click", function(){
+    alert("Message Sent")
+    });
