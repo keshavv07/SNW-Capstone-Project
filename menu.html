@@ -18,7 +18,7 @@
                     <li><a href="">Menu</a></li>
                     <li><a href="./about.html">About</a></li>
                     <li><a href="./contact.html">Contact</a></li>
-                    <li><a class="order" href="#">Order Now</a>
+                    <li><a class="order" href="./menu.html">Order Now</a>
                     <li>
                 </ul>
             </div>
@@ -30,7 +30,8 @@
     </div>
     <div class="mnu">
         <section class="menu-header">
-            <input type="text" placeholder="Search for dishes..." class="search-box">
+            <input id="search" type="text" placeholder="Search for dishes..." class="search-box">
+            <ul id="suggestions"></ul>
             <div class="menu-filter">
                 <button class="filter-btn active">All</button>
                 <button class="filter-btn">Appetizers</button>
@@ -40,6 +41,61 @@
             </div>
         </section>
     </div>
+
+    <section class="featured">
+        <div class="dishes">
+            <div class="dish-card">
+                <div class="dish-image">
+                    <img src="images/salmon.jpeg" alt="Grilled Salmon">
+                </div>
+                <div class="dish-info">
+                    <h3>Grilled Salmon</h3>
+                    <p>Fresh Atlantic salmon with herbs, lemon butter sauce, and seasonal vegetables.</p>
+                    <div class="dish-footer">
+                        <h4 id="price1">₹200.42</h4>
+
+                        <button id="minus1">-</button>
+                        <span id="qty1">1</span>
+                        <button id="plus1">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="dish-card">
+                <div class="dish-image">
+                    <img src="images/pizza.jpeg" alt="Pizza">
+
+                </div>
+                <div class="dish-info">
+                    <h3>Margherita Pizza</h3>
+                    <p>Classic Italian pizza with fresh mozzarella, tomatoes, and basil.</p>
+                    <div class="dish-footer">
+                        <h4 id="price2">₹505.51</h4>
+
+                        <button id="minus2">-</button>
+                        <span id="qty2">1</span>
+                        <button id="plus2">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="dish-card">
+                <div class="dish-image">
+                    <img src="images/salad.jpeg" alt="Salad">
+                </div>
+                <div class="dish-info">
+                    <h3>Caesar Salad</h3>
+                    <p>Crispy romaine lettuce, parmesan cheese, croutons, and Caesar dressing.</p>
+                    <div class="dish-footer">
+                        <h4 id="price3">₹300.56</h4>
+
+                        <button id="minus3">-</button>
+                        <span id="qty3">1</span>
+                        <button id="plus3">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="foot">
         <div class="footer-container">
             <div class="footer-column">
@@ -83,6 +139,7 @@
             <p>© 2025 Feastify. All rights reserved. Made with ❤️ for food lovers.</p>
         </div>
     </footer>
+    <script src="menu.js"></script>
 </body>
 
 </html>

@@ -18,7 +18,7 @@
                     <li><a href="./menu.html">Menu</a></li>
                     <li><a href="./about.html">About</a></li>
                     <li><a href="">Contact</a></li>
-                    <li><a class="order" href="#">Order Now</a>
+                    <li><a class="order" href="./menu.html">Order Now</a>
                     <li>
                 </ul>
             </div>
@@ -59,7 +59,8 @@
             <form class="contact-form">
                 <div class="form-row">
                     <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Email Address" required>
+                    <input id="email" type="email" placeholder="Email Address" required>
+                    <p id="emailError" style="color: red;"></p>
                 </div>
 
                 <input type="text" placeholder="Phone Number (Optional)">
@@ -114,6 +115,7 @@
             <p>© 2025 Feastify. All rights reserved. Made with ❤️ for food lovers.</p>
         </div>
     </footer>
+    <script src="contact.js"></script>
 </body>
 
 </html>
